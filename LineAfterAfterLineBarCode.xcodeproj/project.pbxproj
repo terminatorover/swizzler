@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		285B19BD1994463400E3E7CB /* RGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 285B19BC1994463400E3E7CB /* RGLoginViewController.m */; };
 		2891E3B3199417DD00DCA4B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2891E3B2199417DD00DCA4B1 /* Foundation.framework */; };
 		2891E3B5199417DD00DCA4B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2891E3B4199417DD00DCA4B1 /* CoreGraphics.framework */; };
 		2891E3B7199417DD00DCA4B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2891E3B6199417DD00DCA4B1 /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		2891E3D4199417DD00DCA4B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2891E3B6199417DD00DCA4B1 /* UIKit.framework */; };
 		2891E3DC199417DD00DCA4B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2891E3DA199417DD00DCA4B1 /* InfoPlist.strings */; };
 		2891E3DE199417DD00DCA4B1 /* LineAfterAfterLineBarCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2891E3DD199417DD00DCA4B1 /* LineAfterAfterLineBarCodeTests.m */; };
+		2891E3E919943EB300DCA4B1 /* RGLoginCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2891E3E819943EB300DCA4B1 /* RGLoginCoordinator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		285B19BB1994463400E3E7CB /* RGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RGLoginViewController.h; path = ../RGLoginViewController.h; sourceTree = "<group>"; };
+		285B19BC1994463400E3E7CB /* RGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RGLoginViewController.m; path = ../RGLoginViewController.m; sourceTree = "<group>"; };
 		2891E3AF199417DD00DCA4B1 /* LineAfterAfterLineBarCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineAfterAfterLineBarCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2891E3B2199417DD00DCA4B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2891E3B4199417DD00DCA4B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,8 @@
 		2891E3D9199417DD00DCA4B1 /* LineAfterAfterLineBarCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LineAfterAfterLineBarCodeTests-Info.plist"; sourceTree = "<group>"; };
 		2891E3DB199417DD00DCA4B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2891E3DD199417DD00DCA4B1 /* LineAfterAfterLineBarCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineAfterAfterLineBarCodeTests.m; sourceTree = "<group>"; };
+		2891E3E719943EB300DCA4B1 /* RGLoginCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGLoginCoordinator.h; sourceTree = "<group>"; };
+		2891E3E819943EB300DCA4B1 /* RGLoginCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGLoginCoordinator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		285B19BA1994460600E3E7CB /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				285B19BB1994463400E3E7CB /* RGLoginViewController.h */,
+				285B19BC1994463400E3E7CB /* RGLoginViewController.m */,
+				2891E3C7199417DD00DCA4B1 /* RGViewController.h */,
+				2891E3C8199417DD00DCA4B1 /* RGViewController.m */,
+			);
+			name = viewControllers;
+			sourceTree = "<group>";
+		};
+		285B19BE1994480C00E3E7CB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		2891E3A6199417DC00DCA4B1 = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +139,10 @@
 				2891E3C1199417DD00DCA4B1 /* RGAppDelegate.h */,
 				2891E3C2199417DD00DCA4B1 /* RGAppDelegate.m */,
 				2891E3C4199417DD00DCA4B1 /* Main.storyboard */,
-				2891E3C7199417DD00DCA4B1 /* RGViewController.h */,
-				2891E3C8199417DD00DCA4B1 /* RGViewController.m */,
+				2891E3E719943EB300DCA4B1 /* RGLoginCoordinator.h */,
+				2891E3E819943EB300DCA4B1 /* RGLoginCoordinator.m */,
+				285B19BE1994480C00E3E7CB /* New Group */,
+				285B19BA1994460600E3E7CB /* viewControllers */,
 				2891E3CA199417DD00DCA4B1 /* Images.xcassets */,
 				2891E3B9199417DD00DCA4B1 /* Supporting Files */,
 			);
@@ -251,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2891E3BF199417DD00DCA4B1 /* main.m in Sources */,
+				285B19BD1994463400E3E7CB /* RGLoginViewController.m in Sources */,
+				2891E3E919943EB300DCA4B1 /* RGLoginCoordinator.m in Sources */,
 				2891E3C3199417DD00DCA4B1 /* RGAppDelegate.m in Sources */,
 				2891E3C9199417DD00DCA4B1 /* RGViewController.m in Sources */,
 			);
@@ -457,6 +485,7 @@
 				2891E3E3199417DD00DCA4B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2891E3E4199417DD00DCA4B1 /* Build configuration list for PBXNativeTarget "LineAfterAfterLineBarCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +494,7 @@
 				2891E3E6199417DD00DCA4B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
