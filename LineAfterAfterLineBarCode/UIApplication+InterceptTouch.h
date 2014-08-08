@@ -1,5 +1,5 @@
 //
-//  RGViewController.h
+//  UIApplication+InterceptTouch.h
 //  LineAfterAfterLineBarCode
 //
 //  Created by Robera Developer on 8/7/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RGViewController : UIViewController
+@interface UIApplication (InterceptTouch)
 
 @end

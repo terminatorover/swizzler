@@ -2,7 +2,7 @@
 //  RGLoginViewController.m
 //  LineAfterAfterLineBarCode
 //
-//  Created by Vensi Developer on 8/7/14.
+//  Created by Robera Developer on 8/7/14.
 //  Copyright (c) 2014 EnterWithBoldness. All rights reserved.
 //
 

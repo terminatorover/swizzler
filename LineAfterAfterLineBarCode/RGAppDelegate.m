@@ -2,17 +2,20 @@
 //  RGAppDelegate.m
 //  LineAfterAfterLineBarCode
 //
-//  Created by Vensi Developer on 8/7/14.
+//  Created by Robera Developer on 8/7/14.
 //  Copyright (c) 2014 EnterWithBoldness. All rights reserved.
 //
 
 #import "RGAppDelegate.h"
-
+#import "RGLoginCoordinator.h"
 @implementation RGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    RGLoginCoordinator *sharedCoordinator = [RGLoginCoordinator sharedLogin];
+    sharedCoordinator.appWindow = self.window;
+    
     return YES;
 }
 							
