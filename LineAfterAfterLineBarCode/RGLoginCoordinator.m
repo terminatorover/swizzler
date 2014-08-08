@@ -80,13 +80,7 @@
 #pragma mark - Alert View Delegate 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     //now we know the user has tapped ok regarding the session expiring so we take them to the login VC and show local notification depending it it's in the background or not
-    UIApplication *sharedApplication = [UIApplication sharedApplication];
-    if(sharedApplication.applicationState == UIApplicationStateBackground){
-        UILocalNotification *localNotification = [[UILocalNotification alloc]init];
-        localNotification.alertBody = @"Your Session has Expired";
-        localNotification.fireDate = [NSDate date];
-        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-    }
+ 
     
     //first get the storyboard
     UIStoryboard *mainIphoneStoryBoard = [ UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];

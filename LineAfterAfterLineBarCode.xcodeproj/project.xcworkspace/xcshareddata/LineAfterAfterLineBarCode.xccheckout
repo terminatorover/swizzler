@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>712421D9-E869-4941-B4A0-AA5D744C2EE2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LineAfterAfterLineBarCode</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C9858B82-52B7-45F4-BFC0-F15AE5B1D2AA</key>
+		<string>https://github.com/terminatorover/swizzler.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LineAfterAfterLineBarCode.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C9858B82-52B7-45F4-BFC0-F15AE5B1D2AA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/terminatorover/swizzler.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C9858B82-52B7-45F4-BFC0-F15AE5B1D2AA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C9858B82-52B7-45F4-BFC0-F15AE5B1D2AA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>swizzler</string>
+		</dict>
+	</array>
+</dict>
+</plist>
