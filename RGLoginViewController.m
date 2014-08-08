@@ -16,8 +16,8 @@
 
 - (IBAction)logIn:(id)sender {
     
-    //perform a check if the user has logged in, if so then reset the timer
     RGLoginCoordinator *sharedLoginCoordinator = [RGLoginCoordinator sharedLogin];
+    
     [sharedLoginCoordinator resetTimer];
     sharedLoginCoordinator.loginState = LoggedIn;
     
