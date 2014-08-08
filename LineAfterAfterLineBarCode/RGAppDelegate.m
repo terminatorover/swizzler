@@ -16,6 +16,11 @@
     RGLoginCoordinator *sharedCoordinator = [RGLoginCoordinator sharedLogin];
     sharedCoordinator.appWindow = self.window;
     
+    /**we set the expiration Time(i'll do it manually here(60 secs), if this was for real i'd use the users set data and
+    use a default time in the mean time(no pun inteded)
+    **/
+    sharedCoordinator.logOutTime = 60;
+    
     return YES;
 }
 							
@@ -45,5 +50,17 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark - Local Notification Listeners
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+  UIAlertView *alertMessage = [ [UIAlertView alloc]
+                                     initWithTitle:@"session expired"
+                                     message:@"You've been logged out"
+                                     delegate:nil
+                                     cancelButtonTitle:@"Ok"otherButtonTitles:nil
+                                     ];
+        [alertMessage show];
+}
+
 
 @end

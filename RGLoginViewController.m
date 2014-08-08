@@ -7,12 +7,24 @@
 //
 
 #import "RGLoginViewController.h"
-
+#import "RGLoginCoordinator.h"
 @interface RGLoginViewController ()
 
 @end
 
 @implementation RGLoginViewController
+
+- (IBAction)logIn:(id)sender {
+    
+    //perform a check if the user has logged in, if so then reset the timer
+    RGLoginCoordinator *sharedLoginCoordinator = [RGLoginCoordinator sharedLogin];
+    [sharedLoginCoordinator resetTimer];
+    sharedLoginCoordinator.loginState = LoggedIn;
+    
+    
+    
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

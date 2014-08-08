@@ -15,7 +15,7 @@
     RGLoginCoordinator *loginCoordinator = [RGLoginCoordinator sharedLogin];
     
     NSSet *allTouches  = [event allTouches];
-    if(allTouches.count > 0 ){
+    if(allTouches.count > 0  && loginCoordinator.loginState == NotLoggedIn){
         //then there are touches
         NSLog(@"There are %lu nubmer of tcouhes",(unsigned long)allTouches.count);
         [loginCoordinator resetTimer];
